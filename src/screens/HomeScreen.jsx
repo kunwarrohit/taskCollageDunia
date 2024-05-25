@@ -107,8 +107,10 @@ const HomeScreen = () => {
                   return (
                     <td className="p-4 text-center border-b border-blue-gray-50">
                       {collegeDetail[detail]}
-                      <button className="text-orange-500 p-2">Apply Now</button>
-                      <button className="text-green-500 p-2">
+                      <button className="hover:bg-gray-500 hover:text-white hover:border border-gray-500 rounded-lg text-orange-500 p-2">
+                        Apply Now
+                      </button>
+                      <button className="hover:bg-gray-500 hover:text-white hover:border border-gray-500 rounded-lg text-green-500 p-2">
                         Download Brochure
                       </button>
                     </td>

@@ -2,7 +2,7 @@
     "collegeDetails": [
         {
             "cdrank":1,
-            "name": "College A",
+            "name": "IIT Mumbai",
             "fees": 30000,
             "placement":"4 LPA",
             "userReviewRating": 4.5,
@@ -11,7 +11,7 @@
         },
         {
             "cdrank":2,
-            "name": "College B",
+            "name": "IIT Delhi",
             "fees": 100000,
             "placement":"12 LPA",
             "userReviewRating": 3.5,
@@ -20,7 +20,7 @@
         },
         {
             "cdrank":3,
-            "name": "College C",
+            "name": "IIT Madras",
             "fees": 70000,
             "placement":"7 LPA",
             "userReviewRating": 3.8,
@@ -29,7 +29,7 @@
         },
         {
             "cdrank":4,
-            "name": "College D",
+            "name": "Bits Goa",
             "fees": 60000,
             "placement":"8 LPA",
             "userReviewRating": 3.1,
@@ -38,7 +38,7 @@
         },
         {
             "cdrank":5,
-            "name": "College E",
+            "name": "Parul Univaersity",
             "fees": 70000,
             "placement":"7 LPA",
             "userReviewRating": 3.8,
@@ -47,7 +47,7 @@
         },
         {
             "cdrank":6,
-            "name": "College A",
+            "name": "JSS Academy",
             "fees": 30000,
             "placement":"4 LPA",
             "userReviewRating": 4.5,
@@ -83,7 +83,7 @@
         },
         {
             "cdrank":10,
-            "name": "College E",
+            "name": "Vit Banglore",
             "fees": 70000,
             "placement":"7 LPA",
             "userReviewRating": 3.3,
@@ -92,7 +92,97 @@
         },
         {
             "cdrank":11,
-            "name": "College F",
+            "name": "IIT Mumbai",
+            "fees": 30000,
+            "placement":"4 LPA",
+            "userReviewRating": 4.5,
+            "collegeduniaRating": 4.8,
+            "featured": false
+        },
+        {
+            "cdrank":12,
+            "name": "IIT Delhi",
+            "fees": 100000,
+            "placement":"12 LPA",
+            "userReviewRating": 3.5,
+            "collegeduniaRating": 3.1,
+            "featured": true
+        },
+        {
+            "cdrank":13,
+            "name": "IIT Madras",
+            "fees": 70000,
+            "placement":"7 LPA",
+            "userReviewRating": 3.8,
+            "collegeduniaRating": 4.5,
+            "featured": false
+        },
+        {
+            "cdrank":14,
+            "name": "Bits Goa",
+            "fees": 60000,
+            "placement":"8 LPA",
+            "userReviewRating": 3.1,
+            "collegeduniaRating": 4.2,
+            "featured": true
+        },
+        {
+            "cdrank":15,
+            "name": "Parul Univaersity",
+            "fees": 70000,
+            "placement":"7 LPA",
+            "userReviewRating": 3.8,
+            "collegeduniaRating": 3.5,
+            "featured": false
+        },
+        {
+            "cdrank":16,
+            "name": "JSS Academy",
+            "fees": 30000,
+            "placement":"4 LPA",
+            "userReviewRating": 4.5,
+            "collegeduniaRating": 4.8,
+            "featured": false
+        },
+        {
+            "cdrank":17,
+            "name": "College B",
+            "fees": 100000,
+            "placement":"12 LPA",
+            "userReviewRating": 4.2,
+            "collegeduniaRating": 3.1,
+            "featured": true
+        },
+        {
+            "cdrank":18,
+            "name": "Thapar University",
+            "fees": 70000,
+            "placement":"7 LPA",
+            "userReviewRating": 4.1,
+            "collegeduniaRating": 4.5,
+            "featured": false
+        },
+        {
+            "cdrank":19,
+            "name": "College D",
+            "fees": 60000,
+            "placement":"8 LPA",
+            "userReviewRating": 4.3,
+            "collegeduniaRating": 4.2,
+            "featured": true
+        },
+        {
+            "cdrank":20,
+            "name": "Nit Delhi",
+            "fees": 70000,
+            "placement":"7 LPA",
+            "userReviewRating": 3.3,
+            "collegeduniaRating": 3.5,
+            "featured": false
+        },
+        {
+            "cdrank":21,
+            "name": "Nit Bhopal",
             "fees": 80000,
             "placement":"5 LPA",
             "userReviewRating": 3.7,
