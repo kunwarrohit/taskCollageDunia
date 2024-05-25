@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import FormDataContext from "./components/FormDataContext/FormDataContext";
 import HomeScreen from "./screens/HomeScreen";
 
 function App() {
