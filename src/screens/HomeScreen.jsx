@@ -124,31 +124,55 @@ const HomeScreen = () => {
       }
     });
   return (
-    <div>
-      <h1>Colleges</h1>
-      <div>
+    <div className="grid justify-items-center border border-gray-500 rounded-lg p-2">
+      <div className=" my-5 ">
         <input
           type="text"
           placeholder="Search by name"
           onChange={handleSearch}
+          className="hover:bg-gray-500 hover:text-white mx-5 border-2 border-gray-500 rounded-lg p-2"
         />
-        <button onClick={() => handleSort("collegeduniaRating")}>
+        <button
+          className="hover:bg-gray-500 hover:text-white mx-5 border-2 border-gray-500 rounded-lg p-2"
+          onClick={() => handleSort("collegeduniaRating")}
+        >
           Sort by Collegedunia Rating
         </button>
-        <button onClick={() => handleSort("fees")}>Sort by Fees</button>
-        <button onClick={() => handleSort("userReviewRating")}>
+        <button
+          className="hover:bg-gray-500 hover:text-white mx-5 border-2 border-gray-500 rounded-lg p-2"
+          onClick={() => handleSort("fees")}
+        >
+          Sort by Fees
+        </button>
+        <button
+          className="hover:bg-gray-500 hover:text-white mx-5 border-2 border-gray-500 rounded-lg p-2"
+          onClick={() => handleSort("userReviewRating")}
+        >
           Sort by User Review Rating
         </button>
       </div>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Collegedunia Rating</th>
-            <th>Fees</th>
-            <th>User Review Rating</th>
-            <th>Featured</th>
+      <table className="w-full border-2 border-blue-500 rounded-lg p-2">
+        <thead className="w-full  border border-green-500 rounded-lg p-2">
+          <tr className="flex justify-center border border-green-500 rounded-lg p-2">
+            <th className="border border-red-500  p-2 w-[150px] text-left">
+              CD Rank
+            </th>
+            <th className="border border-red-500 rounded-lg p-2 w-[500px] text-left">
+              Colleges
+            </th>
+            <th className="border border-red-500 rounded-lg p-2 w-[150px] text-left">
+              Course Fees
+            </th>
+            <th className="border border-red-500 rounded-lg p-2 w-[150px] text-left">
+              Placement
+            </th>
+            <th className="border border-red-500 rounded-lg p-2 w-[150px] text-left">
+              User Reviews
+            </th>
+            <th className="border border-red-500 rounded-lg p-2 w-[150px] text-left">
+              Ranking
+            </th>
           </tr>
         </thead>
         <tbody>
