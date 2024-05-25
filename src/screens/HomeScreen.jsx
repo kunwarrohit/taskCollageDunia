@@ -152,30 +152,30 @@ const HomeScreen = () => {
         </button>
       </div>
 
-      <table className="w-full border-2 border-blue-500 rounded-lg p-2">
-        <thead className="w-full  border border-green-500 rounded-lg p-2">
-          <tr className="flex justify-center border border-green-500 rounded-lg p-2">
-            <th className="border border-red-500  p-2 w-[150px] text-left">
+      <table className="w-full ">
+        <thead className="w-full flex justify-center border border-green-500 rounded-lg p-2">
+          <tr className="flex justify-center ">
+            <th className="bg-blue-400 text-white   p-2 w-[150px] text-left">
               CD Rank
             </th>
-            <th className="border border-red-500 rounded-lg p-2 w-[500px] text-left">
+            <th className="bg-blue-400 mx-1 text-white p-2 w-[500px] text-left">
               Colleges
             </th>
-            <th className="border border-red-500 rounded-lg p-2 w-[150px] text-left">
+            <th className="bg-blue-400 mx-1 text-white p-2 w-[150px] text-left">
               Course Fees
             </th>
-            <th className="border border-red-500 rounded-lg p-2 w-[150px] text-left">
+            <th className="bg-blue-400 mx-1 text-white p-2 w-[150px] text-left">
               Placement
             </th>
-            <th className="border border-red-500 rounded-lg p-2 w-[150px] text-left">
+            <th className="bg-blue-400 mx-1 text-white p-2 w-[150px] text-left">
               User Reviews
             </th>
-            <th className="border border-red-500 rounded-lg p-2 w-[150px] text-left">
+            <th className="bg-blue-400 mx-1 text-white p-2 w-[150px] text-left">
               Ranking
             </th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className=" border border-gray-500 p-2">
           {filteredData.map((college) => (
             <tr key={college.name}>
               <td>{college.name}</td>
