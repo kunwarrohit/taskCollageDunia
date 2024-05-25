@@ -1,78 +1,15 @@
 import React, { useState, useEffect } from "react";
-
+import tableUtils from "../lib/tableData.json";
+import collegeData from "../lib/collageDetails.json";
 // Dummy college data
-const colleges = [
-  {
-    name: "College A",
-    collegeduniaRating: 4.5,
-    fees: 100000,
-    userReviewRating: 4,
-    featured: true,
-  },
-  {
-    name: "College B",
-    collegeduniaRating: 3.8,
-    fees: 80000,
-    userReviewRating: 3.5,
-    featured: false,
-  },
-  {
-    name: "College C",
-    collegeduniaRating: 4.2,
-    fees: 120000,
-    userReviewRating: 4.2,
-    featured: true,
-  },
-  {
-    name: "College A",
-    collegeduniaRating: 4.5,
-    fees: 100000,
-    userReviewRating: 4,
-    featured: true,
-  },
-  {
-    name: "College B",
-    collegeduniaRating: 3.8,
-    fees: 80000,
-    userReviewRating: 3.5,
-    featured: false,
-  },
-  {
-    name: "College C",
-    collegeduniaRating: 4.2,
-    fees: 120000,
-    userReviewRating: 4.2,
-    featured: true,
-  },
-  {
-    name: "College A",
-    collegeduniaRating: 4.5,
-    fees: 100000,
-    userReviewRating: 4,
-    featured: true,
-  },
-  {
-    name: "College B",
-    collegeduniaRating: 3.8,
-    fees: 80000,
-    userReviewRating: 3.5,
-    featured: false,
-  },
-  {
-    name: "College C",
-    collegeduniaRating: 4.2,
-    fees: 120000,
-    userReviewRating: 4.2,
-    featured: true,
-  },
-];
+const colleges = collegeData;
 
 const HomeScreen = () => {
-  const [data, setData] = useState(colleges.slice(0, 10)); // Initial 10 rows
+  const [data, setData] = useState(colleges.collegeDetails.slice(0, 10));
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState("");
-  const [sortBy, setSortBy] = useState(null); // Sort by field
-  const [sortOrder, setSortOrder] = useState("asc"); // Sort order (ascending/descending)
+  const [sortBy, setSortBy] = useState(null);
+  const [sortOrder, setSortOrder] = useState("asc");
 
   // Infinite Scroll
   useEffect(() => {
@@ -93,7 +30,7 @@ const HomeScreen = () => {
   useEffect(() => {
     const startIndex = currentPage * 10;
     const endIndex = startIndex + 10;
-    setData(colleges.slice(startIndex, endIndex));
+    setData(colleges.collegeDetails.slice(startIndex, endIndex));
   }, [currentPage]);
 
   // Search functionality
@@ -109,7 +46,7 @@ const HomeScreen = () => {
   };
 
   // Filter and sort data
-  const filteredData = data
+  const filteredData = colleges.collegeDetails
     .filter((college) =>
       college.name.toLowerCase().includes(searchTerm.toLowerCase())
     )
@@ -124,7 +61,7 @@ const HomeScreen = () => {
       }
     });
   return (
-    <div className="grid justify-items-center border border-gray-500 rounded-lg p-2">
+    <div className="grid justify-items-center  rounded-lg p-2">
       <div className=" my-5 ">
         <input
           type="text"
@@ -152,37 +89,36 @@ const HomeScreen = () => {
         </button>
       </div>
 
-      <table className="w-full ">
-        <thead className="w-full flex justify-center border border-green-500 rounded-lg p-2">
-          <tr className="flex justify-center ">
-            <th className="bg-blue-400 text-white   p-2 w-[150px] text-left">
-              CD Rank
-            </th>
-            <th className="bg-blue-400 mx-1 text-white p-2 w-[500px] text-left">
-              Colleges
-            </th>
-            <th className="bg-blue-400 mx-1 text-white p-2 w-[150px] text-left">
-              Course Fees
-            </th>
-            <th className="bg-blue-400 mx-1 text-white p-2 w-[150px] text-left">
-              Placement
-            </th>
-            <th className="bg-blue-400 mx-1 text-white p-2 w-[150px] text-left">
-              User Reviews
-            </th>
-            <th className="bg-blue-400 mx-1 text-white p-2 w-[150px] text-left">
-              Ranking
-            </th>
+      <table className="w-full text-left table-auto min-w-max">
+        <thead>
+          <tr className="">
+            {tableUtils.tableHeaders.map((item) => (
+              <th className="p-4 text-center border-b border-blue-gray-100 bg-blue-400  ">
+                {item}
+              </th>
+            ))}
           </tr>
         </thead>
-        <tbody className=" border border-gray-500 p-2">
-          {filteredData.map((college) => (
-            <tr key={college.name}>
-              <td>{college.name}</td>
-              <td>{college.collegeduniaRating}</td>
-              <td>{college.fees}</td>
-              <td>{college.userReviewRating}</td>
-              <td>{college.featured ? "Yes" : "No"}</td>
+        <tbody>
+          {filteredData.map((collegeDetail) => (
+            <tr className="hover:bg-orange-200">
+              {Object.keys(collegeDetail).map((detail) => {
+                if (detail === "featured")
+                  return (
+                    <td className="p-4 text-center border-b border-blue-gray-50">
+                      {collegeDetail[detail]}
+                      <button className="text-orange-500 p-2">Apply Now</button>
+                      <button className="text-green-500 p-2">
+                        Download Brochure
+                      </button>
+                    </td>
+                  );
+                return (
+                  <td className="p-4 text-center border-b border-blue-gray-50">
+                    {collegeDetail[detail]}
+                  </td>
+                );
+              })}
             </tr>
           ))}
         </tbody>

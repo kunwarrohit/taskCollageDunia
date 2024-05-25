@@ -1,0 +1,103 @@
+{
+    "collegeDetails": [
+        {
+            "cdrank":1,
+            "name": "College A",
+            "fees": 30000,
+            "placement":"4 LPA",
+            "userReviewRating": 3.5,
+            "collegeduniaRating": 4.8,
+            "featured": false
+        },
+        {
+            "cdrank":2,
+            "name": "College B",
+            "fees": 100000,
+            "placement":"12 LPA",
+            "userReviewRating": 3.5,
+            "collegeduniaRating": 3.1,
+            "featured": true
+        },
+        {
+            "cdrank":3,
+            "name": "College C",
+            "fees": 70000,
+            "placement":"7 LPA",
+            "userReviewRating": 3.5,
+            "collegeduniaRating": 4.5,
+            "featured": false
+        },
+        {
+            "cdrank":4,
+            "name": "College D",
+            "fees": 60000,
+            "placement":"8 LPA",
+            "userReviewRating": 3.5,
+            "collegeduniaRating": 4.2,
+            "featured": true
+        },
+        {
+            "cdrank":5,
+            "name": "College E",
+            "fees": 70000,
+            "placement":"7 LPA",
+            "userReviewRating": 3.5,
+            "collegeduniaRating": 3.5,
+            "featured": false
+        },
+        {
+            "cdrank":6,
+            "name": "College A",
+            "fees": 30000,
+            "placement":"4 LPA",
+            "userReviewRating": 3.5,
+            "collegeduniaRating": 4.8,
+            "featured": false
+        },
+        {
+            "cdrank":7,
+            "name": "College B",
+            "fees": 100000,
+            "placement":"12 LPA",
+            "userReviewRating": 3.5,
+            "collegeduniaRating": 3.1,
+            "featured": true
+        },
+        {
+            "cdrank":8,
+            "name": "College C",
+            "fees": 70000,
+            "placement":"7 LPA",
+            "userReviewRating": 3.5,
+            "collegeduniaRating": 4.5,
+            "featured": false
+        },
+        {
+            "cdrank":9,
+            "name": "College D",
+            "fees": 60000,
+            "placement":"8 LPA",
+            "userReviewRating": 3.5,
+            "collegeduniaRating": 4.2,
+            "featured": true
+        },
+        {
+            "cdrank":10,
+            "name": "College E",
+            "fees": 70000,
+            "placement":"7 LPA",
+            "userReviewRating": 3.5,
+            "collegeduniaRating": 3.5,
+            "featured": false
+        },
+        {
+            "cdrank":11,
+            "name": "College F",
+            "fees": 80000,
+            "placement":"5 LPA",
+            "userReviewRating": 3.5,
+            "collegeduniaRating": 4.1,
+            "featured": true
+}
+]
+}
